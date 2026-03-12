@@ -1,4 +1,4 @@
-# Sataki AntiCrash Bot
+# AntiCrash Bot
 
 Русскоязычный Discord anti-crash / anti-nuke бот на `Python + Disnake` с интерактивной slash-панелью `/anticrash_manage`, локальным SQLite-хранилищем и готовым `start.sh` для Ubuntu.
 
