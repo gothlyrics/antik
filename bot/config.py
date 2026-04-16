@@ -18,7 +18,7 @@ class Config:
 def load_config() -> Config:
     load_dotenv()
 
-    required = ("DISCORD_TOKEN", "DISCORD_CLIENT_ID", "DISCORD_GUILD_ID")
+    required = ("MTQ5NDM5OTUzODYyMDkyMzk3Ng.G3BMJs.hNCTE8EkW1Ojx_WYxlBUwYNAIceay6vkv7BpDc", "1494399538620923976", "1494450549670678821")
     missing = [key for key in required if not os.getenv(key)]
     if missing:
         raise RuntimeError(
@@ -26,8 +26,8 @@ def load_config() -> Config:
         )
 
     return Config(
-        token=os.environ["DISCORD_TOKEN"],
-        client_id=os.environ["DISCORD_CLIENT_ID"],
-        guild_id=int(os.environ["DISCORD_GUILD_ID"]),
+        token=os.environ["MTQ5NDM5OTUzODYyMDkyMzk3Ng.G3BMJs.hNCTE8EkW1Ojx_WYxlBUwYNAIceay6vkv7BpDc"],
+        client_id=os.environ["1494399538620923976"],
+        guild_id=int(os.environ["1494450549670678821"]),
         database_path=Path.cwd() / "data" / "anticrash.sqlite",
     )
